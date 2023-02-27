@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - CV</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ebfbeb16b.js" crossorigin="anonymous"></script>    
+    <link id="thumbnail" rel="icon" type="image/x-icon">
+    <meta property="og:title" content="Proyecto Final" />
+    <meta property="og:type" content="Curriculum Vitae" />
+    <meta property="og:url" content=" http://www.example.com" />
+    <meta property="og:image" content="https://img.freepik.com/free-photo/workspace-workplace-office-table_144627-40148.jpg?w=996&t=st=1675017739~exp=1675018339~hmac=213754d376f9fff5afab1a2f5608c93b699033ee3fa8a4091ebf04777ea42b41" />
+    <meta property="og:description" content="Un CV de ejemplo para entregar el proyecto final" />
+    <link rel="manifest" href="mlacv.webmanifest" />
+    <script src="JS/camposDerecha.js" defer></script>  
+    <script src="JS/app.js" defer></script>  
+</head>
+<body>
+
+    <div class="left">
+        <ul><ul>
+            <img id="large">
+        </ul></ul>   
+        <p></p>
+
+        <h1><ul>
+            <p><span class="apeYNom" id="title"></span> <span class="apeYNom" id="first"></span> <span class="apeYNom" id="last"></span></p>
+        </h1></ul>
+
+        <ul>
+
+            <button id="notifications">Solicitar notificaciones</button>
+            
+            <h2>Nacimiento: </h2> <ul>
+                <ul class="datosPersonales"><b>Fecha: </b><span id="date"></span></ul>
+                <ul class="datosPersonales"><b>Edad: </b><span id="age"></span> </ul>
+            </ul>
+ 
+            <h2>Género: <span id="gender"></span></h2> 
+            
+            <h2>Ubicación</h2><ul>
+                <ul class="datosPersonales"><b>Dirección: </b><span id="street"></span></ul>
+                <ul class="datosPersonales"><b>Ciudad: </b><span id="city"></span></ul>
+                <ul class="datosPersonales"><b>Estado/Provincia: </b><span id="state"></span></ul>
+                <ul class="datosPersonales"><b>País: </b><span id="country"></span></ul>
+                <ul class="datosPersonales"><b>Código postal: </b><span id="postcode"></span></ul>
+            </ul>
+
+            
+            <h2>Contacto: </h2>
+                <ul>
+                        <ul class="datosPersonales"><b>E-mail: </b><span  id="email"></span></ul>
+                        <ul class="datosPersonales"><b>Teléfono: </b><span  id="phone"></span></ul>
+                        <ul class="datosPersonales"><b>Celular: </b><span id="cell"></span></ul>
+                </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div class="right">
+        <button id="botonPerfil">Perfil:  <i id="flechaAbajoPerfil" class="fa-solid fa-arrow-down" style="display: block;"></i><i id="flechaArribaPerfil" class="fa-solid fa-arrow-up" style="display: none;"></i></button> 
+        <p id="perfil" class="textoDeBoton" style="display: none;"></p>
+        <p></p><p></p>
+
+
+        <button id="botonEducacion">Educación:  <i id="flechaAbajoEducacion" class="fa-solid fa-arrow-down" style="display: block;"></i><i id="flechaArribaEducacion" class="fa-solid fa-arrow-up" style="display: none;"></i></button> 
+        <p id="educacion" class="textoDeBoton" style="display: none;"></p>
+        <p></p><p></p>
+
+        <button id="botonExperiencia">Experiencia Laboral:  <i id="flechaAbajoExperiencia" class="fa-solid fa-arrow-down" style="display: block;"></i><i id="flechaArribaExperiencia" class="fa-solid fa-arrow-up" style="display: none;"></i></button> 
+        <p id="experiencia" class="textoDeBoton" style="display: none;"></p>
+        <p></p><p></p>
+
+        <button id="botonHabilidades">Habilidades:  <i id="flechaAbajoHabilidades" class="fa-solid fa-arrow-down" style="display: block;"></i><i id="flechaArribaHabilidades" class="fa-solid fa-arrow-up" style="display: none;"></i></button> 
+        <p id="habilidades" class="textoDeBoton" style="display: none;"></p>                
+    </div>     
+    
+</body>
+</html>

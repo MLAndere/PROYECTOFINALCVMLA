@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("../IMG/Fondo.png");
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    background-image: 
+    linear-gradient(to bottom, 
+    transparent 50%, 
+    #a2d39c 50%, #a2d39c 95%, #7cc576 95%);
+    background-size: 100% 200%;
+    transition: all .25s ease;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+button:hover {
+    background-position: bottom center;
+}
+
+button a {
+    display: block;
+    padding: 1rem 0;
+}
+
+
+
+.apeYNom {
+    width: 1500px; 
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.left {
+    position: initial;
+    width: 35%;
+    float: left;
+}
+
+.right {
+    font-size: 16px;
+    width: 60%;
+    height: fit-content;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 40px;
+    float: left;    
+    border: 10px solid grey;
+    background-image: url("../IMG/gifDeLaDerecha.gif");
+    background-size: 110%;
+    background-color: burlywood;
+}
+
+.textoDeBoton {
+    border: 5px solid grey;
+    background-image: url("../IMG/PapelArrugadoDerecha.png");
+    color: darkblue;
+    font-family: 'Indie Flower', cursive;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.datosPersonales {
+    font-size: 18px;
+    margin-left: 45px;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 15px;
+}
+
+b, span {
+    padding: 0px;
+}
+
+span {
+    font-weight: normal;
+}
+
+#large {
+    margin-left: 25px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+@media screen and (max-width: 800px) {
+    .left, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
